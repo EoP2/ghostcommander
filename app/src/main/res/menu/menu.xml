@@ -8,27 +8,22 @@
       <menu>
         <item android:id="@+id/home"
          android:title="@string/home"
-         android:alphabeticShortcut="h"
-         android:icon="@drawable/ic_menu_home"/>
+         android:alphabeticShortcut="h"/>
         <item android:id="@+id/favs"
          android:title="@string/favs"
-         android:alphabeticShortcut="f"
-         android:icon="@drawable/ic_menu_star"/>
+         android:alphabeticShortcut="f"/>
         <item android:id="@+id/add_fav"
          android:title="@string/add_fav"
-         android:alphabeticShortcut="*"
-         android:icon="@android:drawable/star_off"/>
+         android:alphabeticShortcut="*"/>
         <item android:id="@+id/enter"
          android:title="@string/enter"
          android:alphabeticShortcut="d"/>
         <item android:id="@+id/oth_sh_this"
          android:title="@string/oth_sh_this"/>
         <item android:id="@+id/search"
-         android:title="@string/search_file"
-         android:icon="@drawable/ic_menu_search"/>
+         android:title="@string/search_file"/>
         <item android:id="@+id/trashcan"
-         android:title="@string/trashcan"
-         android:icon="@android:drawable/ic_menu_delete"/>
+         android:title="@string/trashcan"/>
       </menu>
     </item>
 
@@ -39,19 +34,16 @@
       <menu>
         <item android:id="@+id/by_name"
             android:title="@string/sort_by_name"
-            android:alphabeticShortcut="n"
-            android:icon="@android:drawable/ic_menu_sort_alphabetically"/>
+            android:alphabeticShortcut="n"/>
         <item android:id="@+id/by_ext"
             android:title="@string/sort_by_ext"
             android:alphabeticShortcut="e"/>
         <item android:id="@+id/by_size"
             android:title="@string/sort_by_size"
-            android:alphabeticShortcut="s"
-            android:icon="@android:drawable/ic_menu_sort_by_size"/>
+            android:alphabeticShortcut="s"/>
         <item android:id="@+id/by_date"
             android:title="@string/sort_by_date"
-            android:alphabeticShortcut="m"
-            android:icon="@android:drawable/ic_menu_recent_history"/>
+            android:alphabeticShortcut="m"/>
         <item android:id="@+id/refresh"
              android:title="@string/refresh"
              android:alphabeticShortcut="r"/>
@@ -93,8 +85,7 @@
         <item android:id="@+id/rescan"
             android:title="@string/rescan"/>
         <item android:id="@+id/prefs"
-            android:title="@string/prefs"
-            android:icon="@android:drawable/ic_menu_preferences"/>
+            android:title="@string/prefs"/>
         <item android:id="@+id/exit"
             android:title="@string/F10"/>
       </menu>

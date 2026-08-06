@@ -5,11 +5,9 @@
           android:showAsAction="always">
       <menu>
         <item android:id="@+id/home"
-              android:title="@string/home"
-              android:icon="@drawable/ic_menu_home"/>
+              android:title="@string/home"/>
         <item android:id="@+id/favs"
-              android:title="@string/favs"
-              android:icon="@drawable/ic_menu_star"/>
+              android:title="@string/favs"/>
         <item android:id="@+id/action_back"
               android:title="@string/go_up"
               android:icon="@drawable/ic_menu_back"/>
@@ -17,8 +15,7 @@
               android:title="@string/enter"
               android:icon="@drawable/ic_menu_goto"/>
         <item android:id="@+id/search"
-           android:title="@string/search_file"
-           android:icon="@drawable/ic_menu_search"/>
+           android:title="@string/search_file"/>
         <item android:id="@+id/totop"
               android:title="@string/go_top"
               android:icon="@drawable/top"/><!-- @android:drawable/arrow_up_float -->
@@ -28,31 +25,25 @@
         </menu>
     </item>
     <item android:id="@+id/action_sort"
-          android:icon="@drawable/ic_menu_sort_by_size"
           android:title="@string/sorting"
           android:showAsAction="always">
           <menu>
               <item android:id="@id/by_name"
                   android:title="@string/sort_by_name"
-                  android:checkable="true"
-                  android:icon="@android:drawable/ic_menu_sort_alphabetically"/>
+                  android:checkable="true"/>
               <item android:id="@id/by_ext"
                   android:title="@string/sort_by_ext"
-                  android:checkable="true"
-                  android:icon="@android:drawable/ic_menu_sort_alphabetically"/>
+                  android:checkable="true"/>
               <item android:id="@id/by_size"
                   android:title="@string/sort_by_size"
-                  android:checkable="true"
-                  android:icon="@android:drawable/ic_menu_sort_by_size"/>
+                  android:checkable="true"/>
               <item android:id="@id/by_date"
                   android:title="@string/sort_by_date"
-                  android:checkable="true"
-                  android:icon="@android:drawable/ic_menu_recent_history"/>
+                  android:checkable="true"/>
               <item android:id="@id/by_adate"
                   android:title="@string/sort_by_adate"
                   android:checkable="true"
-                  android:visible="false"
-                  android:icon="@android:drawable/ic_menu_recent_history"/>
+                  android:visible="false"/>
           </menu>
     </item>
     <item android:id="@+id/action_select"
