@@ -26,6 +26,15 @@ jobs:
         with:
           gradle-version: '8.7'
 
+      # The runner image sets ANDROID_HOME / ANDROID_SDK_ROOT, but it does
+      # NOT put cmdline-tools' bin directory (where sdkmanager lives) on
+      # PATH by default. Add it explicitly before calling sdkmanager.
+      - name: Configure Android SDK environment
+        run: |
+          echo "ANDROID_HOME=$ANDROID_SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_HOME=$RUNNER_TEMP/android-home" >> "$GITHUB_ENV"
+          echo "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
+
       # Make sure the exact SDK Platform / Build-Tools this project needs
       # are present, regardless of what happens to already be installed
       # on the runner image.
