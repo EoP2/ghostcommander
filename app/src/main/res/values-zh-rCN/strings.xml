@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <string name="file">新建</string>
   <string name="location">位置</string>
   <string name="list">列表</string>
   <string name="app">应用程序</string>
@@ -348,7 +349,7 @@ Use \%# for a file counter, \%## with 2 digits and so on.</string>
   <string name="toolbar_settings">工具栏</string>
   <string name="summary_toolbar_settings">定制屏幕下方的工具栏</string>
   <string name="show_actionbar">启用操作栏</string>
-  <string name="summary_show_actionbar">在屏幕顶部显示操作栏。需要重启。</string>
+  <string name="summary_show_actionbar">在屏幕顶部显示操作栏，需要重启</string>
   <string name="show_toolbar">启用工具栏</string>
   <string name="summary_show_toolbar">显示屏幕下方的工具栏</string>
   <string name="show_hotkeys">显示热键</string>
@@ -444,7 +445,7 @@ Use \%# for a file counter, \%## with 2 digits and so on.</string>
   <string name="execute_command">命令行模式</string>
   <string name="nothing_to_open">什么都没打开</string>
   <string name="remind_to_save">记得保存更改</string>
-  <string name="saved">\"%1$s\" 已保存。</string>
+  <string name="saved">\"%1$s\" 已保存</string>
   <string name="not_saved">是否保存更改</string>
   <string name="save">保存</string>
   <string name="save_as">另存为&#8230;</string>
@@ -458,10 +459,10 @@ Use \%# for a file counter, \%## with 2 digits and so on.</string>
   <string name="rot_right">顺时针旋转</string>
   <string name="rot_left">逆时针旋转</string>
   <string name="encoding">编码</string>
-  <string name="encoding_set">编码已更改为 \"%1$s\"，重新加载以编辑。如果此时保存它，新的编码将被应用。</string>
+  <string name="encoding_set">编码已更改为 \"%1$s\"，重新加载以编辑，如果此时保存，新的编码将被应用</string>
   <string name="no_such_file">不存在文件 \"%1$s\"</string>
-  <string name="too_big_file">文件 \"%1$s\" 太大。</string>
-  <string name="binary_file">文件 \"%1$s\" 是二进制的。编辑可能会损坏它。请自担风险。</string>
+  <string name="too_big_file">文件 \"%1$s\" 太大</string>
+  <string name="binary_file">\"%1$s\" 是二进制文件，编辑可能会造成损坏，请谨慎操作</string>
   <string name="cant_open_dir">\"%1$s\" 是一个文件夹</string>
   <string name="cant_view_empt">文件 \"%1$s\" 是空的</string>
   <string name="cant_open">无法打开此文件</string>
@@ -537,12 +538,11 @@ Ghost Commander可以像打开文件夹一样打开标准的ZIP文件。但不�
 </p>
 <h3>插件</h3>
 <p>
-安装插件可以实现一些扩展功能。例如访问Windows的共享文件夹、SSH文件传输协议。
-以及云储存:Box, Dropbox and Google Drive.
+安装插件可以实现一些扩展功能。例如访问SMB、SFTP，以及云储存：Box、Dropbox 和Google Drive.
 </p>
-<h3>ROOT模式</h3>
+<h3>Root模式</h3>
 <p>
-请谨慎使用带root模式(超级用户)和挂载点特性的Ghost Commander。BusyBox的安装路径可在设置中定义。
+请谨慎使用带Root模式(超级用户)和挂载点特性的Ghost Commander。BusyBox的安装路径可在设置中定义。
 </p>
 <h3>位置编辑</h3>
 <p>
