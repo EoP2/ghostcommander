@@ -13,7 +13,7 @@
     <color name="ttl_drk">#FF555555</color>
     <color name="btn_drk">#FF2A2A2A</color>
     <color name="btn_odf">#FFFFFFFF</color>    
-    <color name="toolbar">#333</color>    
+    <color name="toolbar">#ff0000</color>    
 
     <color name="bgr_lgt">#FFFFFFFF</color>    
     <color name="fgr_lgt">#FF000000</color>    
