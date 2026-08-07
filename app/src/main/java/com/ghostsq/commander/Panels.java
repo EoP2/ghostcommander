@@ -194,19 +194,13 @@ public class Panels implements AdapterView.OnItemSelectedListener,
 
     private final Drawable createButtonStates() {
         try {
-            float bbb = Utils.getBrightness( ck.btnColor );
-            int sc = Utils.shiftBrightness( ck.btnColor, 0.2f );
             StateListDrawable states = new StateListDrawable();
-            GradientDrawable bpd = Utils.getShadingEx( ck.btnColor, 1f );
-            if( bpd != null ) {
-                bpd.setStroke( 1, sc );
-                bpd.setCornerRadius( 2 );
-            }
-            GradientDrawable bnd = Utils.getShadingEx( ck.btnColor, bbb < 0.4f ? 0.6f : 0.8f );
-            if( bnd != null ) {
-                bnd.setStroke( 1, sc );
-                bnd.setCornerRadius( 2 );
-            }
+            GradientDrawable bpd = new GradientDrawable();
+            bpd.setColor( Utils.shiftBrightness( ck.btnColor, 0.7f ) );
+            bpd.setCornerRadius( 2 );
+            GradientDrawable bnd = new GradientDrawable();
+            bnd.setColor( ck.btnColor );
+            bnd.setCornerRadius( 2 );
             states.addState( new int[]{android.R.attr.state_pressed}, bpd );
             states.addState( new int[]{}, bnd );
             return states;
