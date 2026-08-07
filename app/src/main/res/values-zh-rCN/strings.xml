@@ -451,7 +451,7 @@ Use \%# for a file counter, \%## with 2 digits and so on.</string>
   <string name="save_as">另存为&#8230;</string>
   <string name="revert">撤销</string>
   <string name="wrap">自动换行</string>
-  <string name="go_up">父目录</string>
+  <string name="go_up">上一级文件夹</string>
   <string name="go_top">页首</string>
   <string name="go_end">页尾</string>
   <string name="go_next">下一张</string>
