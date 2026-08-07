@@ -101,8 +101,6 @@
     </item>
     <item android:id="@+id/prefs"
           android:title="@string/prefs"/>
-    </item>
     <item android:id="@+id/exit"
           android:title="@string/F10"/>
-    </item>
 </menu>
