@@ -85,20 +85,6 @@
       </menu>
     </item>
 
-    <item android:id="@+id/help"
-        android:title="@string/help"
-        android:icon="@drawable/info">        
-      <menu>
-        <item android:id="@+id/keys"
-            android:title="@string/keys"/>
-        <item android:id="@+id/online"
-            android:title="@string/online_help"/>
-        <item android:id="@+id/about"
-            android:title="@string/about"/>
-        <item android:id="@+id/donate"
-            android:title="@string/donate"/>
-        </menu>
-    </item>
     <item android:id="@+id/prefs"
           android:title="@string/prefs"/>
     <item android:id="@+id/exit"

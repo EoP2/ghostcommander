@@ -6,4 +6,18 @@
           android:title="@string/rest_prefs"/>
       <item android:id="@+id/save_log"
           android:title="@string/save_log"/>
+      <item android:id="@+id/help"
+        android:title="@string/help"
+        android:icon="@drawable/info">        
+        <menu>
+          <item android:id="@+id/keys"
+                android:title="@string/keys"/>
+          <item android:id="@+id/online"
+                android:title="@string/online_help"/>
+          <item android:id="@+id/donate"
+                android:title="@string/donate"/>
+          <item android:id="@+id/about"
+                android:title="@string/about"/>
+        </menu>
+      </item>
 </menu>
