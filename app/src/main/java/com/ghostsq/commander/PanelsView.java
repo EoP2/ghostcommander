@@ -73,13 +73,13 @@ public class PanelsView extends ViewGroup {
             //Log.v( TAG, "l:" + l + " t:" + t + " r:" + r + " b:" + b + " ch:" + changed );
             //Log.v( TAG, "rv mw:" + rv.getMeasuredWidth() );
             int stat_h = ls != null && rs != null ? ls.getMeasuredHeight() : 0;
-            lv.layout(  l, t, panel_width, b - stat_h );
             if( ls != null )
-                ls.layout(  l, b - stat_h, panel_width, b );
+                ls.layout(  l, t, panel_width, t + stat_h );
+            lv.layout(  l, t + stat_h, panel_width, b );
             dv.layout(  l + panel_width, t, l + panel_width + 1, b );
-            rv.layout(  l + panel_width + 1, t, r, b - stat_h );
             if( rs != null )
-                rs.layout(  l + panel_width + 1, b - stat_h, r, b );
+                rs.layout(  l + panel_width + 1, t, r, t + stat_h );
+            rv.layout(  l + panel_width + 1, t + stat_h, r, b );
         } catch( Exception e ) {
             e.printStackTrace();
         } catch( Error e ) {
