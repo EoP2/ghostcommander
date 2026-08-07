@@ -17,6 +17,8 @@
               android:title="@string/go_top"/>
         <item android:id="@+id/tobot"
               android:title="@string/go_end"/>
+        <item android:id="@+id/trashcan"
+         android:title="@string/trashcan"/>
         </menu>
     </item>
     <item android:id="@+id/action_sort"
