@@ -52,12 +52,10 @@
              android:alphabeticShortcut="+"/>
         <item android:id="@+id/uns_all"
              android:title="@string/unselect_all"
-             android:alphabeticShortcut="-"
-             android:icon="@drawable/ic_menu_mark"/>
+             android:alphabeticShortcut="-"/>
         <item android:id="@+id/swap"
              android:title="@string/swap"
-             android:alphabeticShortcut="u"
-             android:icon="@drawable/ic_menu_unmark"/>
+             android:alphabeticShortcut="u"/>
         </menu>
     </item>
 
