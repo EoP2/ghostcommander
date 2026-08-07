@@ -5,8 +5,7 @@
             android:title="@string/data_settings">
         <PreferenceScreen
                 android:key="left_panel_settings"
-                android:title="@string/left_panel_settings"
-                android:icon="@drawable/list">
+                android:title="@string/left_panel_settings">
 		        <CheckBoxPreference
 		                android:key="left_detailed_SbS"
 		                android:title="@string/detailed_view_SbS"
@@ -35,8 +34,7 @@
 		</PreferenceScreen>
         <PreferenceScreen
                 android:key="right_panel_settings"
-                android:title="@string/right_panel_settings"
-                android:icon="@drawable/list">
+                android:title="@string/right_panel_settings">
     	        <CheckBoxPreference
     	                android:key="right_detailed_SbS"
     	                android:title="@string/detailed_view_SbS"
@@ -80,11 +78,9 @@
                 android:key="panels_sxs_mode"
                 android:title="@string/panels_mode"
                 android:summary="@string/summary_panels_mode"
-                android:icon="@drawable/vertical_split"
                 android:entries="@array/panels_mode"
                 android:entryValues="@array/panels_mode_vals"
                 android:dialogTitle="@string/panels_mode"
-                android:dialogIcon="@drawable/vertical_split"
                 android:defaultValue="a"/>                
         <CheckBoxPreference
                 android:key="two_lines"
@@ -95,16 +91,13 @@
                 android:key="finger_friendly_a"
                 android:title="@string/finger_friendly"
                 android:summary="@string/summary_finger_friendly"
-                android:icon="@drawable/line_spacing"
                 android:entries="@array/panels_mode"
                 android:entryValues="@array/panels_mode_vals"
                 android:dialogTitle="@string/finger_friendly"
-                android:dialogIcon="@drawable/line_spacing"
                 android:defaultValue="y"/>
         <PreferenceScreen
                 android:key="icons"
-                android:title="@string/icons"
-                android:icon="@drawable/photo">
+                android:title="@string/icons">
                 <CheckBoxPreference
                         android:key="show_icons"
                         android:title="@string/show_icons"
@@ -125,7 +118,6 @@
                     android:key="thumbnails_size"
                     android:title="@string/thumbnails_size"
                     android:summary="@string/summary_thumbnails_size"
-                    android:icon="@drawable/photo_size"
                     android:dependency="show_thumbnails"
                     android:defaultValue="200"/>
         </PreferenceScreen>
@@ -133,35 +125,28 @@
                 android:key="font_size"
                 android:title="@string/font_size"
                 android:summary="@string/summary_font_size"
-                android:icon="@drawable/font_size"
                 android:entries="@array/font_size"
                 android:entryValues="@array/font_size"
-                android:dialogTitle="@string/font_size" 
-                android:dialogIcon="@drawable/font_size"
+                android:dialogTitle="@string/font_size"
                 android:defaultValue="12"/>
         <ListPreference
                 android:key="text_font_size"
                 android:summary="@string/summary_font_size"
-                android:icon="@drawable/font_size"
                 android:entries="@array/font_size"
                 android:entryValues="@array/font_size"
                 android:dialogTitle="@string/font_size"
-                android:dialogIcon="@drawable/font_size"
                 android:defaultValue="12"/>
 	    <PreferenceScreen
                 android:key="colors"
                 android:title="@string/colors"
-                android:summary="@string/summary_colors"
-                android:icon="@drawable/colors">
+                android:summary="@string/summary_colors">
            <ListPreference
                     android:key="color_themes"
                     android:title="@string/color_themes"
                     android:summary="@string/summary_color_themes"
-                    android:icon="@drawable/colors"
                     android:entries="@array/color_themes"
                     android:entryValues="@array/color_themes_vals"
                     android:dialogTitle="@string/color_themes"
-                    android:dialogIcon="@drawable/colors"
                     android:defaultValue="a"
                     />
            <PreferenceCategory
@@ -169,8 +154,7 @@
               <PreferenceScreen
                   android:key="fgr_color_picker"
                   android:title="@string/fgr_color_picker"
-                  android:summary="@string/summary_fgr_color_picker"
-                  android:icon="@drawable/colors">
+                  android:summary="@string/summary_fgr_color_picker">
               </PreferenceScreen>
               <PreferenceScreen
                   android:key="bgr_color_picker"
@@ -214,11 +198,9 @@
                 android:key="language"
                 android:title="@string/language"
                 android:summary="@string/summary_language"
-                android:icon="@drawable/language"
                 android:entries="@array/language"
                 android:entryValues="@array/language_vals"
                 android:dialogTitle="@string/language"
-                android:dialogIcon="@drawable/language"
                 android:defaultValue=""/>                
     </PreferenceCategory>
     <PreferenceCategory
@@ -228,17 +210,14 @@
                 android:key="show_actionbar"
                 android:title="@string/show_actionbar"
                 android:summary="@string/summary_show_actionbar"
-                android:icon="@drawable/top_bar"
                 android:entries="@array/panels_mode"
                 android:entryValues="@array/panels_mode_vals"
-                android:dialogTitle="@string/show_actionbar" 
-                android:dialogIcon="@drawable/top_bar"
+                android:dialogTitle="@string/show_actionbar"
                 android:defaultValue="a"/>
         <PreferenceScreen
                 android:key="toolbar_settings"
                 android:title="@string/toolbar_settings"
-                android:summary="@string/summary_toolbar_settings"
-                android:icon="@drawable/buttons">
+                android:summary="@string/summary_toolbar_settings">
             <CheckBoxPreference
                         android:key="show_toolbar"
                         android:title="@string/show_toolbar"
@@ -271,7 +250,6 @@
                 <PreferenceScreen
                         android:key="toolbar_preference"
                         android:dependency="show_toolbar"
-                        android:icon="@drawable/tools"
                         android:title="@string/toolbar_preference"
                         android:summary="@string/summary_toolbar_preference">
                 </PreferenceScreen>
@@ -279,8 +257,7 @@
         <PreferenceScreen
                 android:key="selection_zone"
                 android:title="@string/selection_zone_setup"
-                android:summary="@string/summary_selection_zone_setup"
-                android:icon="@drawable/checklist">
+                android:summary="@string/summary_selection_zone_setup">
         </PreferenceScreen>
         <CheckBoxPreference
                 android:key="panels_sliding"
@@ -290,8 +267,7 @@
         <PreferenceScreen
                 android:key="compatibility_settings"
                 android:title="@string/compatibility_settings"
-                android:summary="@string/summary_compatibility_settings"
-                android:icon="@drawable/phone">
+                android:summary="@string/summary_compatibility_settings">
                 <CheckBoxPreference
                             android:key="arrow_legc"
                             android:title="@string/arrow_mode"
@@ -330,8 +306,7 @@
        <PreferenceScreen
             android:key="advanced_preferences"
             android:title="@string/advanced_settings"
-            android:summary="@string/summary_advanced_settings"
-            android:icon="@drawable/misc">
+            android:summary="@string/summary_advanced_settings">
           <CheckBoxPreference
                   android:key="root_root"
                   android:title="@string/root_root"
@@ -385,7 +360,6 @@
                 android:defaultValue="false"/>
             <PreferenceScreen
                 android:key="system_notifications"
-                android:icon="@android:drawable/ic_dialog_alert"
                 android:title="@string/system_notifications"
                 android:summary="@string/summary_system_notifications"/>
 		    <CheckBoxPreference
