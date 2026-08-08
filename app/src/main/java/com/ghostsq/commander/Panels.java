@@ -276,10 +276,10 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                         int c_length = caption.length();
                         int hp = c_length <= 8 ? (int)( ( 12 - c_length ) ) : 4;
                         hp *= density;
-                        int vp = fingerFriendly ? (int)( 10 * density ) : 6;
+                        int vp = fingerFriendly ? (int)( 20 * density ) : 6;
                         b.setPadding( hp, vp, hp, vp );
                         float bbb = Utils.getBrightness( ck.btnColor );
-                        b.setTextColor( bbb > 0.8f ? 0xFF000000 : 0xFFFFFFFF );
+                        b.setTextColor( bbb > 0.8f ? 0xFF333333 : 0xFFf8f8f8 );
                         b.setTextSize( bfs );
                         Drawable bd = createButtonStates();
                         if( bd != null )
