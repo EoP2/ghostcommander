@@ -273,9 +273,9 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                         b = new Button( c, null, fingerFriendly ? android.R.style.Widget_Holo_Button :
                                 android.R.style.Widget_Button_Small );
                         int c_length = caption.length();
-                        int hp = c_length <= 8 ? (int)( ( 14 - c_length ) ) : 4;
+                        int hp = c_length <= 8 ? (int)( ( 15 - c_length ) ) : 4;
                         hp *= density;
-                        int vp = fingerFriendly ? (int)( 12 * density ) : 6;
+                        int vp = fingerFriendly ? (int)( 13 * density ) : 6;
                         b.setPadding( hp, vp, hp, vp );
                         float bbb = Utils.getBrightness( ck.btnColor );
                         b.setTextColor( bbb > 0.8f ? 0xFF333333 : 0xFFF5F5F5 );
