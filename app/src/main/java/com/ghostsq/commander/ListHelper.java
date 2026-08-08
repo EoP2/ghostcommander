@@ -250,9 +250,10 @@ public class ListHelper {
             Display disp = p.c.getWindowManager().getDefaultDisplay();
             int w = (int)( disp.getWidth()  / density );
             int h = (int)( disp.getHeight() / density );
+            final int WIDTH_THRESHOLD = 480;
             
             int m = ca.setMode( CommanderAdapter.MODE_WIDTH,
-                    sp.getBoolean( "two_lines", true ) ? CommanderAdapter.NARROW_MODE
+                    ( p.sxs && w/2 < WIDTH_THRESHOLD ) || sp.getBoolean( "two_lines", true ) ? CommanderAdapter.NARROW_MODE
                             : CommanderAdapter.WIDE_MODE );
             flv.getWidth();
             ca.setMode( CommanderAdapter.SET_FONT_SIZE, p.fnt_sz );
