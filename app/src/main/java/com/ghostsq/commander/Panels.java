@@ -365,11 +365,6 @@ public class Panels implements AdapterView.OnItemSelectedListener,
         }
     }
 
-    private final GradientDrawable getShading( int color ) {
-        float drop = ck.isButtonsDefault() ? 1.0f : 0.8f;
-        return Utils.getShadingEx( color, drop );
-    }
-
     private final void refreshPanelTitles() {
         try {
             CommanderAdapter cur_ca = getListAdapter( true );
@@ -398,11 +393,7 @@ public class Panels implements AdapterView.OnItemSelectedListener,
             if( h == 0 )
                 h = 30;
             int bg_color = ck.ttlColor;
-            Drawable d = getShading( bg_color );
-            if( d != null )
-                title_bar.setBackgroundDrawable( d );
-            else
-                title_bar.setBackgroundColor( bg_color );
+            title_bar.setBackgroundColor( bg_color );
         }
         highlightTitle( opposite(), false );
         highlightTitle( current, true );
@@ -416,11 +407,7 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                 String tt = title.getText().toString();
                 if( tt.startsWith( "root:" ) )
                     bg_color = 0xFFFF0000;
-                Drawable d = getShading( bg_color );
-                if( d != null )
-                    title.setBackgroundDrawable( d );
-                else
-                    title.setBackgroundColor( bg_color );
+                title.setBackgroundColor( bg_color );
                 title.setTextColor( ck.sfgColor );
             } else {
                 title.setBackgroundColor( ck.selColor & 0x0FFFFFFF );
