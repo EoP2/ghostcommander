@@ -141,7 +141,7 @@ public class Editor extends TextActivityBase implements TextWatcher, OnTouchList
 
             String s_tfs = shared_pref.getString( "text_font_size", null );
             if( s_tfs == null )
-                s_tfs = shared_pref.getString( "font_size", "12" );
+                s_tfs = shared_pref.getString( "font_size", "14" );
             int fs = Integer.parseInt( s_tfs  );
             te.setTextSize( fs );
 
