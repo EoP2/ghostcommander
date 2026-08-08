@@ -623,9 +623,9 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                 TextView title = (TextView)c.findViewById( titlesIds[p] );
                 if( title != null ) {
                     title.setTextSize( font_size );
-                    int vm = 0, hm = (int)( 8 * density );
+                    int vm = 0, hm = (int)( 33 * density );
                     if( finger_friendly )
-                        vm = (int)( 10 * density );
+                        vm = (int)( 20 * density );
                     else
                         vm = (int)( 4 * density );
                     title.setPadding( hm, vm, hm, vm );
