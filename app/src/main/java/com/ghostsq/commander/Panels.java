@@ -95,7 +95,7 @@ public class Panels implements AdapterView.OnItemSelectedListener,
     public boolean volumeLegacy = true;
     private boolean selAtRight = true, disableOpenSelectOnly = false, adpSort = true;
     private float selWidth = 0.5f, downX = 0, downY = 0, x_start = -1;
-    public int scroll_back = 50, fnt_sz = 12;
+    public int scroll_back = 50, fnt_sz = 14;
     private StringBuffer quickSearchBuf = null;
     private Toast quickSearchTip = null;
     private final Favorites favorites;
