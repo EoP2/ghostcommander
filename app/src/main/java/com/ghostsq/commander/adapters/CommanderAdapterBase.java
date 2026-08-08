@@ -632,7 +632,7 @@ public abstract class CommanderAdapterBase extends BaseAdapter implements Comman
                 }
             }
             if( attrView != null ) {
-                boolean vis = dm && attrWidth > 0;
+                boolean vis = dm && attrWidth > 0 && Utils.str( item.attr );
                 attrView.setVisibility( vis ? View.VISIBLE : View.GONE );
                 if( vis ) {
                     String attr_text = item.attr != null ? item.attr.trim() : "";
