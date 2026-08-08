@@ -753,7 +753,7 @@ public class Dialogs implements DialogInterface.OnClickListener {
                     TextView tv = (TextView)dialog.findViewById( R.id.text_view );
                     if( tv != null ) {
                         SharedPreferences shared_pref = PreferenceManager.getDefaultSharedPreferences( owner );
-                        int fnt_sz = Integer.parseInt( shared_pref != null ? shared_pref.getString( "font_size", "12" ) : "12" );
+                        int fnt_sz = Integer.parseInt( shared_pref != null ? shared_pref.getString( "font_size", "14" ) : "14" );
                         boolean reduce_size = toShowInAlertDialog.length() > 128;
                         if( !reduce_size ) {
                             String[] ss = toShowInAlertDialog.split( "\n" );
