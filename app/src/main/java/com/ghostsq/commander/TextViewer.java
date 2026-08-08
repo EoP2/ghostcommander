@@ -94,7 +94,7 @@ public class TextViewer extends TextActivityBase implements View.OnLayoutChangeL
             }
             String s_tfs = shared_pref.getString( "text_font_size", null );
             if( s_tfs == null )
-                s_tfs = shared_pref.getString( "font_size", "12" );
+                s_tfs = shared_pref.getString( "font_size", "14" );
             int fs = Integer.parseInt( s_tfs  );
             textView = findViewById( R.id.text_view );
             if( textView == null ) {
