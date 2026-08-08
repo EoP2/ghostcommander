@@ -197,10 +197,8 @@ public class Panels implements AdapterView.OnItemSelectedListener,
             StateListDrawable states = new StateListDrawable();
             GradientDrawable bpd = new GradientDrawable();
             bpd.setColor( Utils.shiftBrightness( ck.btnColor, 0.7f ) );
-            bpd.setCornerRadius( 2 );
             GradientDrawable bnd = new GradientDrawable();
             bnd.setColor( ck.btnColor );
-            bnd.setCornerRadius( 2 );
             states.addState( new int[]{android.R.attr.state_pressed}, bpd );
             states.addState( new int[]{}, bnd );
             return states;
@@ -251,7 +249,8 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                 Utils.changeLanguage( c );
                 ToolButtons tba = new ToolButtons();
                 tba.restore( sharedPref, c, c.isActionBar() );
-                int bfs = fnt_sz + ( fingerFriendly ? 2 : 1 );
+                //int bfs = fnt_sz + ( fingerFriendly ? 2 : 1 );
+                int bfs = fnt_sz + ( fingerFriendly ? 1 : 1 );
                 for( int i = 0; i < tba.size(); i++ ) {
                     ToolButton tb = tba.get( i );
                     int bid = tb.getId();
@@ -274,12 +273,12 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                         b = new Button( c, null, fingerFriendly ? android.R.style.Widget_Holo_Button :
                                 android.R.style.Widget_Button_Small );
                         int c_length = caption.length();
-                        int hp = c_length <= 8 ? (int)( ( 12 - c_length ) ) : 4;
+                        int hp = c_length <= 8 ? (int)( ( 14 - c_length ) ) : 4;
                         hp *= density;
-                        int vp = fingerFriendly ? (int)( 14 * density ) : 6;
+                        int vp = fingerFriendly ? (int)( 12 * density ) : 6;
                         b.setPadding( hp, vp, hp, vp );
                         float bbb = Utils.getBrightness( ck.btnColor );
-                        b.setTextColor( bbb > 0.8f ? 0xFF333333 : 0xFFf5f5f5 );
+                        b.setTextColor( bbb > 0.8f ? 0xFF333333 : 0xFFF5F5F5 );
                         b.setTextSize( bfs );
                         Drawable bd = createButtonStates();
                         if( bd != null )
@@ -623,7 +622,7 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                 TextView title = (TextView)c.findViewById( titlesIds[p] );
                 if( title != null ) {
                     title.setTextSize( font_size );
-                    int vm = 0, hm = (int)( 8 * density );
+                    int vm = 0, hm = (int)( 6 * density );
                     if( finger_friendly )
                         vm = (int)( 2 * density );
                     else
