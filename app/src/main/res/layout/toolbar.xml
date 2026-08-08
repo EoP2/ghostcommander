@@ -10,7 +10,6 @@
          android:orientation="horizontal"
          android:layout_width="1000dip" 
          android:layout_height="match_parent"
-         android:background="@color/toolbar"
          android:paddingTop="1dp"
          android:paddingBottom="1dp"/>
  </HorizontalScrollView>
