@@ -250,7 +250,7 @@ public class Panels implements AdapterView.OnItemSelectedListener,
                 ToolButtons tba = new ToolButtons();
                 tba.restore( sharedPref, c, c.isActionBar() );
                 //int bfs = fnt_sz + ( fingerFriendly ? 2 : 1 );
-                int bfs = fnt_sz + ( fingerFriendly ? 1 : 1 );
+                int bfs = fnt_sz;
                 for( int i = 0; i < tba.size(); i++ ) {
                     ToolButton tb = tba.get( i );
                     int bid = tb.getId();
