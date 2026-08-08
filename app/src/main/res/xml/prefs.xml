@@ -20,11 +20,9 @@
 		                android:key="left_sorting"
 		                android:title="@string/sorting"
 		                android:summary="@string/summary_sorting"
-                        android:icon="@drawable/sortv"
 		                android:entries="@array/sorting"
 		                android:entryValues="@array/sorting_vals"
 		                android:dialogTitle="@string/sorting"
-                        android:dialogIcon="@drawable/sortv"
 		                android:defaultValue="n"/>                
 		        <CheckBoxPreference
 		                android:key="left_show_hidden"
@@ -49,11 +47,9 @@
                       android:key="right_sorting"
                       android:title="@string/sorting"
                       android:summary="@string/summary_sorting"
-                      android:icon="@drawable/sortv"
                       android:entries="@array/sorting"
                       android:entryValues="@array/sorting_vals"
                       android:dialogTitle="@string/sorting"
-                      android:dialogIcon="@drawable/sortv"
                       android:defaultValue="n"/>
     	        <CheckBoxPreference
     	                android:key="right_show_hidden"
@@ -128,14 +124,14 @@
                 android:entries="@array/font_size"
                 android:entryValues="@array/font_size"
                 android:dialogTitle="@string/font_size"
-                android:defaultValue="12"/>
+                android:defaultValue="14"/>
         <ListPreference
                 android:key="text_font_size"
                 android:summary="@string/summary_font_size"
                 android:entries="@array/font_size"
                 android:entryValues="@array/font_size"
                 android:dialogTitle="@string/font_size"
-                android:defaultValue="12"/>
+                android:defaultValue="14"/>
 	    <PreferenceScreen
                 android:key="colors"
                 android:title="@string/colors"
