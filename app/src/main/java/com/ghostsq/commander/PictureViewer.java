@@ -115,7 +115,7 @@ public class PictureViewer extends Activity implements View.OnTouchListener,
                 Log.e( TAG, "", e1 );
             }
             String fnt_sz_s = sharedPref.getString( "font_size", "14" );
-            int fnt_sz = 12;
+            int fnt_sz = 14;
             try {
                 fnt_sz = Integer.parseInt( fnt_sz_s );
             } catch( NumberFormatException e ) {
